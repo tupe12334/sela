@@ -1,0 +1,41 @@
+select option {
+    background-color: aqua;
+}
+
+input[type=text]:invalid {
+    border: 1px solid red; 
+}
+
+input[type=text]:valid {
+    border: 1px solid green; 
+}
+
+input[type=text]:focus {
+    background-color: pink;
+    border: none; 
+}
+
+input[type=text] {
+    -webkit-text-security:square;
+}
+
+#btn1 {
+    background-color: blue;
+}
+
+.buttons {
+    background-color: yellow;
+}
+
+#clickable-span {
+    border: 1px solid black;
+    border-radius: 3px;
+    /* background-color: lightgray; */
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* 
+Specifity streagth : 
+tag < tag with attribute selector < class < id < inline style 
+*/

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rehersal</title>
+    <link href="style.css" rel="stylesheet" >
+    <style>
+        #btn2 {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <form action="index.html" method="POST">
+            <label for="firstName">First Name :</label>
+            <input id="firstName" type="text" placeholder="Enter First Name" name="fName" required>
+        <div>
+            <label for="pass">Password :</label>
+            <input id="pass" type="password" name="pass">
+        </div>
+        <div>
+            <input type="date" >
+        </div>
+        <div>
+            <label for="btn1" >Button 1 :</label>
+            <input id="btn1" class="buttons" type="button" value="A Button">
+            <label for="btn2" >Button 2 :</label>
+            <button id="btn2" 
+                class="buttons" 
+                style="background-color: lightgray;"
+                onclick="incrementCounter(1)">
+                    Add 1 and Print
+            </button>
+            <button onclick="incrementCounter(2)">Add 2 and Print</button>
+            <div onclick="incrementCounter(1)">Clickable DIV (it also uses function)</div>
+        </div>
+        <div>
+            Choose Gender:
+            <div>
+                <input id="male-radio" type="radio" name="gender" value="male" required>
+                <label for="male-radio">Male</label>
+            </div>
+            <div>
+                <input id="female-radio" type="radio" name="gender" value="female" required>
+                <label for="female-radio">Female</label>
+            </div>
+            <div>
+                <input id="helicopter-radio" type="radio" name="gender" value="attack helicopter" required>
+                <label for="helicopter-radio">Attack Helicopter</label>
+            </div>
+        </div>
+        <div>
+            <label for="weapon">Choose a Weapon</label>
+            <select id="weapon" name="weaponSelected" required>
+                <option value="" selected disabled >Choose a Weapon</option>
+                <option value="dagger">Dagger</option>
+                <option value="signPole">Sign Pole</option>
+                <option value="smallRock">Small Rock</option>
+            </select>
+        </div>
+        <input type="submit" value="Submit" >
+    </form>
+    <p>
+        <span id="clickable-span">Click Me</span>
+        <div id="content"></div>
+    </p>
+    <!-- <script src="myScript.js" type="text/javascript" ></script> -->
+    <script src="htmlEvents.js" type="text/javascript"></script>
+</body>
+</html>
