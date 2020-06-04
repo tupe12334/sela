@@ -12,7 +12,7 @@
     </style>
 </head>
 <body>
-    <form action="index.html" method="POST">
+    <form action="index.html" method="GET">
             <label for="firstName">First Name :</label>
             <input id="firstName" type="text" placeholder="Enter First Name" name="fName" required>
         <div>
@@ -29,7 +29,8 @@
             <button id="btn2" 
                 class="buttons" 
                 style="background-color: lightgray;"
-                onclick="incrementCounter(1)">
+                onclick="incrementCounter(1)"
+                >
                     Add 1 and Print
             </button>
             <button onclick="incrementCounter(2)">Add 2 and Print</button>
@@ -53,18 +54,28 @@
         <div>
             <label for="weapon">Choose a Weapon</label>
             <select id="weapon" name="weaponSelected" required>
+                <!-- this is how we create a placeholder for a select input -->
                 <option value="" selected disabled >Choose a Weapon</option>
-                <option value="dagger">Dagger</option>
-                <option value="signPole">Sign Pole</option>
-                <option value="smallRock">Small Rock</option>
+                <optgroup label="Melee">
+                    <option value="dagger">Dagger</option>
+                    <option value="signPole">Sign Pole</option>
+                    <option value="smallRock">Small Rock</option>
+                </optgroup>
+                <optgroup label="Ranged">
+                    <option value="bow">Bow and Arrow</option>
+                    <option value="shurikens">Throwing Stars</option>
+                    <option value="bananas">Bananas</option>
+                </optgroup>
             </select>
         </div>
         <input type="submit" value="Submit" >
     </form>
     <p>
-        <span id="clickable-span">Click Me</span>
+        <span id="clickable-span" class="clickable-spans red-elements">Click Me</span>
         <div id="content"></div>
     </p>
+    <span id="clock"></span>
+    <button onclick="toggleClock()">Toggle Clock</button>
     <!-- <script src="myScript.js" type="text/javascript" ></script> -->
     <script src="htmlEvents.js" type="text/javascript"></script>
 </body>

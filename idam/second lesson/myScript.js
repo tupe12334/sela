@@ -142,6 +142,3 @@ do { // executes once and then checks condition
     someDoWhileNum++;
     console.log(someDoWhileNum);
 } while (someDoWhileNum < 4);
-
-
-

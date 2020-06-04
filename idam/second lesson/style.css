@@ -27,12 +27,20 @@ input[type=text] {
     background-color: yellow;
 }
 
+.clickable-spans {
+    cursor: pointer;
+    color: blue;
+}
+
+.red-elements {
+    color: red;
+}
+
 #clickable-span {
     border: 1px solid black;
     border-radius: 3px;
     /* background-color: lightgray; */
     padding: 5px;
-    cursor: pointer;
 }
 
 /* 
