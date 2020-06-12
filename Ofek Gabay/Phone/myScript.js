@@ -15,7 +15,6 @@ deletButton.addEventListener("click",function () {
     else{
     
         theText = theText.substring(0,theText.length-1);
-        
     }
     phoneLine.innerText = theText;
 })
@@ -36,4 +35,18 @@ for (let index = 0; index < phoneButton.length; index++) {
         }
     })
 }
+
+const dailingButton = document.getElementById("dailing-button");
+dailingButton.addEventListener("click", function(){
+    if (phoneLine.innerText.length===10) {
+        window.location.href="tel:"+phoneLine.innerText;
+    }
+    else{
+        alert("not enaf numbers");
+    }
+})
+
+
+
+mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));
 

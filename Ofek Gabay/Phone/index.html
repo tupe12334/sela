@@ -1,12 +1,18 @@
 <html>
     <head>
 <link href="myStyle.css" rel="stylesheet">
+
+<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     </head>
     <body>
         <div id="phone">
             <div>
-                <input type="button" value="<" id="delet">
-                <label id="thePhoneNumberLine">0</label>
+                <button class="mdc-button foo-button" id="delet">
+                    <div class="mdc-button__ripple"></div>
+                    <span class="mdc-button__label"><</span>
+                  </button>
+                <label id="thePhoneNumberLine" >0</label>
             </div>
             <div class="line">
                 <input type="button" value="1" class="phoneButton">
@@ -29,10 +35,14 @@
                 <input type="button" value="#" class="phoneButton">
             </div>
             <div>
-                <input type="button" value="Clear" id="clearB">
+                <button id="dailing-button">Dail</button>
+                <button class="mdc-button foo-button" id="clearB">
+                    <div class="mdc-button__ripple"></div>
+                    <span class="mdc-button__label">Clear</span>
+                  </button>
             </div>
         </div>
-
+        
 
 
         <script src="myScript.js" type="text/javascript"></script>
